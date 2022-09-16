@@ -1,5 +1,6 @@
 import React from 'react'
-import { FiSearch } from 'react-icons/fi';
+import {FiSearch}  from 'react-icons/fi';
+import {IoPerson }from 'react-icons/io5';
 
 const MainHead = () => {
   return (
@@ -8,23 +9,22 @@ const MainHead = () => {
   <div className="container-fluid">
     <h3 style={{marginRight:"5px"}}>PICKSY.</h3>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-      {/* <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-      </ul> */}
-      <form className="d-flex">
+      
+      <form className="d-flex m-auto">
       <div className="input-icons" style={{ width: "100%",
             marginBottom: "10px"}}>
       
-      <FiSearch style={{position:'absolute' ,margin:"6px" }}/>
-        <input  className="form-control me-5 " type="search" placeholder="    What Are You Looking For?" aria-label="Search" />
+      <FiSearch style={{position:'absolute' ,   marginTop: "12px" , marginLeft: "3px"}}/>
+        <input  style={{backgroundColor:"#F5F5F5"}} className="form-control me-5 " type="search" placeholder="    What Are You Looking For?                          " aria-label="Search" />
         </div>
-       
-       
-        <button className="btn btn-outline-success" type="submit">Search</button>
       </form>
+      <IoPerson/>
     </div>
   </div>
   
 </nav>
+<hr />
+
 </div> 
   )
 }
